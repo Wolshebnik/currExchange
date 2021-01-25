@@ -1,0 +1,80 @@
+.dropDown {
+  position: absolute;
+  width: 465px;
+  height: 300px;
+  top: 30px;
+  right: -15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 1px rgba(48, 50, 50, .3);
+  overflow: auto;
+
+  input {
+    width: 100%;
+    padding: 5px 16px;
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #cdd7e7;
+    &::placeholder {
+      color: #cdd7e7;
+    }
+  }
+
+  .dropTable {
+    &_header {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgb(87, 87, 87);
+      background-color: rgb(242, 245, 248);
+      padding: 9px 16px 4px;
+    }
+
+    &_data {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      padding: 9px 16px 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(242, 245, 248);
+      }
+
+      &-row {
+        width: 400px;
+      }
+
+      span {
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgb(87, 87, 87);
+      }
+
+      span {
+        vertical-align: super;
+      }
+
+      span + span {
+        margin-left: 10px;
+      }
+
+      .star {
+        position: relative;
+        width: 25px;
+        height: 25px;
+
+        svg {
+          position: absolute;
+          top: -6px;
+          right: -3px;
+
+          &:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+    }
+  }
+}
